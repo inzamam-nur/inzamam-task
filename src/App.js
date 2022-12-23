@@ -5,7 +5,7 @@ import { routes } from "./Routes/Routes";
 
 function App() {
   return (
-    <div className="App">
+    <div style={{width:'80%',margin:'auto',marginTop:'100px'}} >
   <div className='lg:w-5/6 m-auto'><RouterProvider router={routes}></RouterProvider></div>
     </div>
   );

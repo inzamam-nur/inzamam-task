@@ -16,11 +16,11 @@ export const routes=createBrowserRouter([
                 
              },
              {
-                path:'/',
+                path:'/layout2',
                 element:<Layout2></Layout2>,
              },
              {
-                path:'/',
+                path:'/layout3',
                 element:<Layout3></Layout3>,
              },
         ]
