@@ -18,6 +18,7 @@ export const routes=createBrowserRouter([
              {
                 path:'/layout2',
                 element:<Layout2></Layout2>,
+                loader:()=>fetch('http://localhost:5000/userinfo')
              },
              {
                 path:'/layout3',

@@ -10,17 +10,19 @@ const Layout1 = ({setReload}) => {
  e.preventDefault();
  const form = e.target;
  const fullname = form.fullname.value;
- const email = form.email.value;
  const Date_of_birth=startDate;
+ const email = form.email.value;
+const phonenumber=form.phonenumber.value
 
  const user={
 fullname,
 email,
-Date_of_birth
+Date_of_birth,
+phonenumber,
 
  };
  console.log(user)
- fetch("https://b6a11-service-review-server-side-inzamam-inzamamnur14-gmailcom.vercel.app/reviews", {
+ fetch("http://localhost:5000/userinfo", {
   method: "POST",
   headers: {
     "content-type": "application/json",
@@ -31,9 +33,8 @@ Date_of_birth
   .then((data) => {
     console.log(data);
     if (data.acknowledged) {
-      alert("Review added successfully");
+      alert("added successfully");
       form.reset();
-      setReload(data);
     }
   })
   .catch((er) => console.error(er));
