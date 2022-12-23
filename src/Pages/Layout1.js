@@ -22,7 +22,7 @@ phonenumber,
 
  };
  console.log(user)
- fetch("http://localhost:5000/userinfo", {
+ fetch("https://inzamam-job-task-server-side.vercel.app/userinfo", {
   method: "POST",
   headers: {
     "content-type": "application/json",
